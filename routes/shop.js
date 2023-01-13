@@ -23,10 +23,7 @@ router.get("/", (req, res, next) => {
   res.render("shop.ejs", {
     products: adminRoutes.products,
     docTitle: "My Shop",
-    path: "/",
-    hasProducts: adminRoutes.products.length !== 0,
-    activeShop: true,
-    productCSS: true
+    path: "/"
   }); //ejs templating engine
 });
 
