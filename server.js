@@ -30,7 +30,7 @@ app.use((req, res, next) => {
   // res.status(404).sendFile(path.join(rootDir, "views", "404.html")); //express with no templating engine
   // res.status(404).render("404.pug", {docTitle: "Error"}); //pug templating engine
   // res.status(404).render("404.handlebars", {docTitle: "Error"}); //handlebars templating engine
-  res.status(404).render("404.ejs", {docTitle: "Error"}); //ejs templating engine
+  res.status(404).render("404.ejs", {docTitle: "Error", path: "/err"}); //ejs templating engine
 })
 
 app.listen(3000);
